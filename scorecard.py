@@ -13,8 +13,8 @@ class Scorecard(Turtle):
         self.color("black")
 
     def game_over(self):
-        game = Turtle()
-        game.write("Game Over", align="center", font=FONT)
+        self.goto(0,0)
+        self.write("Game Over", align="center", font=FONT)
 
     def write_score(self):
         self.write(f"Level: {self.level}", font=FONT)
